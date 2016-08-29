@@ -19,10 +19,13 @@ colors = {
 }
 
 buttons = {
-  left = 0,
-  right = 1,
-  up = 2,
-  down = 3,
-  o = 4,
-  x = 5
+  left = 0, right = 1,
+  up = 2, down = 3,
+  o = 4, x = 5
+}
+
+btnmasks = {
+  left = 1, right = 2,
+  up = 4, down = 8,
+  o = 16, x = 32
 }
