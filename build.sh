@@ -15,4 +15,4 @@ append constants.lua
 append vectors.lua
 append render.lua
 append aspects.lua
-echo "-- end pico8.h--" >> $outfile
+echo "-- end pico8.h --" >> $outfile

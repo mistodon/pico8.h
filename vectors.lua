@@ -28,8 +28,8 @@ vector = (function()
 
     manh = function(u)
       local sum = 0
-      for k, v in u do
-        sum += v
+      for k, v in pairs(u) do
+        sum += abs(v)
       end
       return sum
     end,
