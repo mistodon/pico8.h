@@ -54,6 +54,10 @@ vector = (function()
       end
       return s .. ")"
     end,
+
+    zero = function(a)
+      return a:manh() == 0
+    end
   }
   module.__index = module
   module.new = function(t)
