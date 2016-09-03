@@ -69,3 +69,9 @@ end)()
 function vec(x, y)
   return vector.new({x=x, y=y})
 end
+
+function input_dir(btnmask)
+  local x = band(btnmask, btnmasks.right) / btnmasks.right - band(btnmask, btnmasks.left) / btnmasks.left
+  local y = band(btnmask, btnmasks.down) / btnmasks.down - band(btnmask, btnmasks.up) / btnmasks.up
+  return vec(x, y)
+end

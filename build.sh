@@ -14,5 +14,6 @@ echo "-- pico8.h --" >> $outfile
 append constants.lua
 append vectors.lua
 append render.lua
+append animation.lua
 append aspects.lua
 echo "-- end pico8.h --" >> $outfile
