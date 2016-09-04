@@ -13,13 +13,15 @@ scenemodel = (function()
       end
     end
   }
-  module.__index = module
+  classify(module)
   module.new = function(aspects)
     local t = {}
     for name in all(aspects) do
       t[name] = {}
     end
-    return setmetatable(t, module)
+    return module._inst(t)
   end
   return module
 end)()
+
+entity = classify({})

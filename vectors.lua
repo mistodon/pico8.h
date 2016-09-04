@@ -59,11 +59,7 @@ vector = (function()
       return a:manh() == 0
     end
   }
-  module.__index = module
-  module.new = function(t)
-    return setmetatable(t, module)
-  end
-  return module
+  return classify(module)
 end)()
 
 function vec(x, y)

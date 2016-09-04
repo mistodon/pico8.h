@@ -12,6 +12,7 @@ function append()
 rm -f $outfile
 echo "-- pico8.h --" >> $outfile
 append constants.lua
+append classes.lua
 append vectors.lua
 append render.lua
 append animation.lua
