@@ -14,7 +14,6 @@ echo "-- pico8.h --" >> $outfile
 append constants.lua
 append classes.lua
 append vectors.lua
-append grid.lua
 append render.lua
 append animation.lua
 append aspects.lua
