@@ -6,11 +6,13 @@ scenemodel = (function()
       for name, objlist in pairs(self) do
         if (obj[name]) add(objlist, obj)
       end
+      return obj
     end,
     remove = function(self, obj)
       for name, objlist in pairs(self) do
         del(objlist, obj)
       end
+      return nil
     end
   }
   classify(module)
