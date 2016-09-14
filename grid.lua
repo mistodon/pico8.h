@@ -17,13 +17,6 @@ grid = (function()
 
     get = function(self, pos, default)
       return self.data[grid.hash(pos)] or default
-    end,
-
-    move = function(self, from, to)
-      local a = self:get(from)
-      local b = self:get(to)
-      self:add(from, b)
-      self:add(to, a)
     end
   })
   module.new = function()
